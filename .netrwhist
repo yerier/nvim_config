@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/yzy/Code/IMX6ULL/Code/linux_drivers/5_dtsled'
+let g:netrw_dirhist_1='/home/yzy/Code/IMX6ULL/Code/kenrek/linux-imx-rel_imx_4.1.15_2.1.0_ga/arch/arm/boot'
+let g:netrw_dirhist_0='/home/yzy/Code/IMX6ULL/Code/kenrek/linux-imx-rel_imx_4.1.15_2.1.0_ga/drivers'
+let g:netrw_dirhist_9='/home/yzy/Code/IMX6ULL/Code/kenrek/linux-imx-rel_imx_4.1.15_2.1.0_ga'
+let g:netrw_dirhist_8='/home/yzy/Documents'
+let g:netrw_dirhist_7='/home/yzy/Code/C/template/Src'
+let g:netrw_dirhist_6='/home/yzy/Code/STM32/F407/HAL_template/Core/Src'
+let g:netrw_dirhist_5='/run/media/yzy/Data/linux/RT_103ze_sem'
+let g:netrw_dirhist_4='/run/media/yzy/Data/linux'
+let g:netrw_dirhist_3='/home/yzy/Code/STM32/F407/HAL_template/.clangd'
