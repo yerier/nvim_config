@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/yzy/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
+  ["clangd_extensions.nvim"] = {
+    loaded = true,
+    path = "/home/yzy/.local/share/nvim/site/pack/packer/start/clangd_extensions.nvim",
+    url = "https://github.com/p00f/clangd_extensions.nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/yzy/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",

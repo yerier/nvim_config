@@ -28,11 +28,12 @@ return require('packer').startup(function(use)
         requires = {'kyazdani42/nvim-web-devicons', opt = true} --状态栏图标
     }
     use {
-        'nvim-tree/nvim-tree.lua', --
+        'nvim-tree/nvim-tree.lua', --    文档树
+
         requires = {
             'nvim-tree/nvim-web-devicons',
         }
-    } 
+    }
     use "christoomey/vim-tmux-navigator"
     use "nvim-treesitter/nvim-treesitter"
     use "p00f/nvim-ts-rainbow"
@@ -49,6 +50,7 @@ return require('packer').startup(function(use)
   use "saadparwaiz1/cmp_luasnip"
   use "rafamadriz/friendly-snippets"
   use "hrsh7th/cmp-path" -- 文件路径
+  use "p00f/clangd_extensions.nvim"
 
   use "numToStr/Comment.nvim" -- gcc和gc注释
   use "windwp/nvim-autopairs" -- 自动补全括号
@@ -59,12 +61,12 @@ return require('packer').startup(function(use)
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.1',  -- 文件检索
     requires = { {'nvim-lua/plenary.nvim'} }
-  }    
+  }
 
     use {
         "startup-nvim/startup.nvim",
         requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
-    } 
+    }
 
   if packer_bootstrap then
     require('packer').sync()
