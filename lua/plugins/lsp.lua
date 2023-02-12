@@ -15,6 +15,7 @@ require("mason-lspconfig").setup({
         "clangd",
         "bashls",
         "cmake",
+        "jsonls",
 
     },
 })
@@ -161,6 +162,17 @@ require("clangd_extensions").setup {
     },
 }
 
+require('lspconfig').bashls.setup {
+
+}
+
+require('lspconfig').cmake.setup {
+
+}
+
+require('lspconfig').jsonls.setup {
+
+}
 
 -- require('lspconfig').clangd.setup {
 --     -- on_attach = keybinds.on_attach,
@@ -175,3 +187,4 @@ require("clangd_extensions").setup {
 --     },
 --     filetypes = { "c", "cpp", "objc", "objcpp" },
 -- }
+
