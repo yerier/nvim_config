@@ -11,11 +11,11 @@ require("mason").setup({
 require("mason-lspconfig").setup({
   -- 确保安装，根据需要填写
     ensure_installed = {
-        "sumneko_lua",
-        "clangd",
-        "bashls",
+        "lua_ls",
         "cmake",
-        "jsonls",
+        "clangd",
+        "rome",
+        "bashls"
 
     },
 })
@@ -23,7 +23,7 @@ require("mason-lspconfig").setup({
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 local util = require 'lspconfig.util'
 
-require("lspconfig").sumneko_lua.setup {
+require("lspconfig").lua_ls.setup {
   capabilities = capabilities,
 }
 
@@ -174,6 +174,11 @@ require('lspconfig').jsonls.setup {
 
 }
 
+require("mason-lspconfig").setup_handlers({
+  function (server_name)
+    require("lspconfig")[server_name].setup{}
+  end
+})
 -- require('lspconfig').clangd.setup {
 --     -- on_attach = keybinds.on_attach,
 --     cmd = {
