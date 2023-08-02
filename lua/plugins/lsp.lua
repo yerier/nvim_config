@@ -162,17 +162,17 @@ require("clangd_extensions").setup {
     },
 }
 
-require('lspconfig').bashls.setup {
-
-}
-
-require('lspconfig').cmake.setup {
-
-}
-
-require('lspconfig').jsonls.setup {
-
-}
+-- require('lspconfig').bashls.setup {
+--
+-- }
+--
+-- require('lspconfig').cmake.setup {
+--
+-- }
+--
+-- require('lspconfig').jsonls.setup {
+--
+-- }
 
 require("mason-lspconfig").setup_handlers({
   function (server_name)
