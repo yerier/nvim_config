@@ -29,12 +29,12 @@ keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 
 --nvim-lsp
 local bufopts = {noremap = true, silent = true, buffer = bufnr}
-vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
-vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
-vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
-vim.keymap.set('n', '<space>D', vim.lsp.buf.type_definition, bufopts)
-vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
-vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
+keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
+keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
+keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
+keymap.set('n', '<space>D', vim.lsp.buf.type_definition, bufopts)
+keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
+keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
 
 --BufferLine
 keymap.set('n', '<TAB>', ':BufferLineCycleNext <CR>') --移动窗口
